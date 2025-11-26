@@ -142,6 +142,9 @@ az deployment group create --resource-group tng-Rgtest --template-file main.bice
 
 <img width="1204" height="884" alt="4" src="https://github.com/user-attachments/assets/e700c7eb-aed3-4ee8-8b5e-5bb54f7d514a" />
 <img width="1215" height="911" alt="5" src="https://github.com/user-attachments/assets/b457136a-3dea-42bf-ada1-4e9f6683bf41" />
+<img width="1201" height="899" alt="2" src="https://github.com/user-attachments/assets/a4df8ec9-21a7-4501-97f7-1c8a677b7c6e" />
+<img width="1258" height="927" alt="1" src="https://github.com/user-attachments/assets/79cd0004-35c3-4740-973e-87650031f847" />
+
 
 
 **🧹 Nettoyage des ressources (IMPORTANT)**
@@ -150,9 +153,11 @@ Pour éviter les coûts Azure :
 
 az group delete --name tng-Rgtest
 
-📸 Capture d’écran à insérer ici
+📸 Capture d’écran 
 
 (Suppression du resource group)
+<img width="1235" height="884" alt="3" src="https://github.com/user-attachments/assets/255a7a5c-3146-4bc1-b8cc-87bd7ce30ae9" />
+
 
 ## Points clés à retenir
 
