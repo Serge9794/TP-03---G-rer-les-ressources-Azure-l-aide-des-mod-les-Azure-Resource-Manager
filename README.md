@@ -84,7 +84,7 @@ Utiliser Cloud Shell PowerShell pour déployer un ARM Template.
 
 3-Lancer le déploiement :
 
-New-AzResourceGroupDeployment `-ResourceGroupName tng-rg3 `-TemplateFile template.json ` -storageAccountName storage-nv03
+New-AzResourceGroupDeployment `-ResourceGroupName tng-Rgtest `-TemplateFile template.json ` -storageAccountName storagenv03
 
 📸 Capture d’écran 
 
@@ -101,9 +101,9 @@ Utiliser Cloud Shell (Bash) pour déployer le modèle ARM.
 
 2-Importer template.json
 
-3-Lancer le déploiement :az deployment group create \ --resource-group tng-rg3 \--template-file template.json \--parameters storageAccountName=storage-nv04
+3-Lancer le déploiement :az deployment group create \ --resource-group tngtest \--template-file template.json \--parameters storageAccountName=storagenv04
 
-📸 Capture d’écran à insérer ici
+📸 Capture d’écran 
 
 (Cloud Shell Bash avec la commande exécutée)
 
@@ -115,7 +115,7 @@ Découvrir le langage Bicep et déployer une ressource Azure via un fichier .bic
 **🔹 Exemple de fichier main.bicep**
 resource stg 'Microsoft.Storage/storageAccounts@2023-01-01' = 
 {
-  name: 'storage-nv05'
+  name: 'storagenv05'
   location: resourceGroup().location
   sku: {
     name: 'Standard_LRS'
@@ -132,7 +132,7 @@ Coller le code ci-dessus
 Déployer avec Azure CLI :
 
 az deployment group create \
-  --resource-group tng-rg3 \
+  --resource-group tng-Rgtest \
   --template-file main.bicep
 
 📸 Capture d’écran à insérer ici
@@ -143,7 +143,7 @@ az deployment group create \
 
 Pour éviter les coûts Azure :
 
-az group delete --name tng-rg3
+az group delete --name tng-Rgtest
 
 📸 Capture d’écran à insérer ici
 
