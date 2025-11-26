@@ -80,15 +80,19 @@ Utiliser Cloud Shell PowerShell pour déployer un ARM Template.
 
 1-Ouvrir Cloud Shell → mode PowerShell
 
-2-Importer votre template.json
+2-Importer votre template.json 
 
 3-Lancer le déploiement :
 
-New-AzResourceGroupDeployment `-ResourceGroupName tng-Rgtest `-TemplateFile template.json ` -storageAccountName storagenv03
+New-AzResourceGroupDeployment `-ResourceGroupName tng-Rgtest `-TemplateFile template.json ` -TemplateparameterFile parameters.json
 
 📸 Capture d’écran 
 
-(Cloud Shell PowerShell avec la commande exécutée)
+<img width="1245" height="915" alt="1" src="https://github.com/user-attachments/assets/00b23270-5263-43d2-9f87-4e7aaf63765b" />
+<img width="1226" height="942" alt="2" src="https://github.com/user-attachments/assets/8b474fba-933d-4add-a6c2-a844eaae4a9b" />
+
+
+
 
 ## 🔶 Tache 4 — Déployer ARM Template avec Azure CLI
 **🔹 Objectif**
@@ -101,11 +105,12 @@ Utiliser Cloud Shell (Bash) pour déployer le modèle ARM.
 
 2-Importer template.json
 
-3-Lancer le déploiement :az deployment group create \ --resource-group tngtest \--template-file template.json \--parameters storageAccountName=storagenv04
+3-Lancer le déploiement :
+az deployment group create --resource-group tngtest --template-file template.json --parameters parameters.json
 
 📸 Capture d’écran 
+<img width="1218" height="940" alt="3" src="https://github.com/user-attachments/assets/06c595db-cd48-452b-9355-053acf2654df" />
 
-(Cloud Shell Bash avec la commande exécutée)
 
 ## 🔶 Tache 5 — Déployer une ressource via un fichier Bicep
 **🔹 Objectif**
@@ -131,13 +136,13 @@ Coller le code ci-dessus
 
 Déployer avec Azure CLI :
 
-az deployment group create \
-  --resource-group tng-Rgtest \
-  --template-file main.bicep
+az deployment group create --resource-group tng-Rgtest --template-file main.bicep
 
-📸 Capture d’écran à insérer ici
+📸 Capture d’écran 
 
-(Déploiement Bicep)
+<img width="1204" height="884" alt="4" src="https://github.com/user-attachments/assets/e700c7eb-aed3-4ee8-8b5e-5bb54f7d514a" />
+<img width="1215" height="911" alt="5" src="https://github.com/user-attachments/assets/b457136a-3dea-42bf-ada1-4e9f6683bf41" />
+
 
 **🧹 Nettoyage des ressources (IMPORTANT)**
 
