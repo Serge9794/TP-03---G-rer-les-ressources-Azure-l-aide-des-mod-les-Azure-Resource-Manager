@@ -13,7 +13,7 @@ L’entreprise **TechNova** souhaite automatiser la création d’environnements
 Votre mission est de créer, exporter, modifier et déployer des ressources Azure à l’aide de modèles ARM et Bicep.
 
 ## 📂 Contenu du TP
-## 🔶 Étape 1 — Créer un modèle ARM à partir du portail Azure
+## 🔶 Tache 1 — Créer un modèle ARM à partir du portail Azure
 **🔹 Objectif**
 
 Créer un compte de stockage et exporter le modèle ARM généré automatiquement.
@@ -22,11 +22,11 @@ Créer un compte de stockage et exporter le modèle ARM généré automatiquemen
 
 1-Se connecter au Portail Azure
 
-2-Créer un Resource Group nommé :tng-rg3
+2-Créer un Resource Group nommé :tng-Rgtest
 
 3-Créer un Storage Account avec les paramètres suivants :
 
-_Nom : storage-nv01
+_Nom : storagenv01
 
 _Région : West Europe
 
@@ -36,11 +36,14 @@ Une fois la ressource créée, se rendre dans :Automatisation → Export Templat
 
 4-Télécharger les fichiers :template.json ;parameters.json
 
-📸 Capture d’écran à insérer ici
+📸 Capture d’écran
+<img width="1255" height="911" alt="T12" src="https://github.com/user-attachments/assets/254560cf-751e-43f4-98fc-e358445d98ce" />
+<img width="1209" height="926" alt="T1" src="https://github.com/user-attachments/assets/73cb66d3-3b8b-4fd2-b1dc-b254c6ddcc5a" />
 
-(Portail Azure → Export Template)
 
-## 🔶 Étape 2 — Modifier un modèle ARM et le redéployer
+
+
+## 🔶 Tache 2 — Modifier un modèle ARM et le redéployer
 **🔹 Objectif**
 
 Comprendre la structure d’un ARM Template et déployer une version modifiée.
@@ -50,7 +53,7 @@ Comprendre la structure d’un ARM Template et déployer une version modifiée.
 1-Ouvrir template.json
 
 2-Modifier le nom de la ressource pour :
-storage-nv02
+storagenv02
 
 3-Enregistrer votre fichier
 
@@ -60,11 +63,15 @@ storage-nv02
 
 6-Charger template.json et parameters.json
 
-📸 Capture d’écran à insérer ici
+📸 Capture d’écran 
 
-(Portail Azure → Custom Deployment avec template.json)
+<img width="1208" height="896" alt="T22" src="https://github.com/user-attachments/assets/b0c0e644-ea27-48b5-94f2-56473e3dc69d" />
+<img width="1176" height="898" alt="T21" src="https://github.com/user-attachments/assets/5f9cb700-df59-4134-a870-f5613559675e" />
+<img width="1238" height="903" alt="T23" src="https://github.com/user-attachments/assets/b970806c-6255-4808-b6ea-fb7d4e6ccd76" />
 
-## 🔶 Étape 3 — Déployer ARM Template avec PowerShell
+
+
+## 🔶 Tache 3 — Déployer ARM Template avec PowerShell
 **🔹 Objectif**
 
 Utiliser Cloud Shell PowerShell pour déployer un ARM Template.
@@ -79,11 +86,11 @@ Utiliser Cloud Shell PowerShell pour déployer un ARM Template.
 
 New-AzResourceGroupDeployment `-ResourceGroupName tng-rg3 `-TemplateFile template.json ` -storageAccountName storage-nv03
 
-📸 Capture d’écran à insérer ici
+📸 Capture d’écran 
 
 (Cloud Shell PowerShell avec la commande exécutée)
 
-## 🔶 Étape 4 — Déployer ARM Template avec Azure CLI
+## 🔶 Tache 4 — Déployer ARM Template avec Azure CLI
 **🔹 Objectif**
 
 Utiliser Cloud Shell (Bash) pour déployer le modèle ARM.
@@ -100,7 +107,7 @@ Utiliser Cloud Shell (Bash) pour déployer le modèle ARM.
 
 (Cloud Shell Bash avec la commande exécutée)
 
-## 🔶 Étape 5 — Déployer une ressource via un fichier Bicep
+## 🔶 Tache 5 — Déployer une ressource via un fichier Bicep
 **🔹 Objectif**
 
 Découvrir le langage Bicep et déployer une ressource Azure via un fichier .bicep.
